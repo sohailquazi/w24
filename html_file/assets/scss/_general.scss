@@ -1,0 +1,278 @@
+/* ==============
+  General
+===================*/
+
+body {
+  background-repeat: repeat;
+  background: $bg-body;
+  font-family: $font-family;
+  color: $body-color;
+  font-size: $base-font;
+}
+
+@media (max-width: 991px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+html {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-family: $font-family-secondary;
+}
+
+p{
+  line-height: 1.7;
+}
+
+svg {
+  max-width: 100%;
+}
+
+* {
+  outline: none !important;
+}
+
+a {
+  color: $gray-600;
+
+  &:hover, &:active, &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+b, strong {
+  font-weight: 500;
+}
+
+.container-alt {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#wrapper {
+  height: $height;
+  overflow: hidden;
+  width: $width;
+}
+
+// Slimscroll
+.slimScrollDiv {
+  height: auto !important;
+}
+
+.embed-responsive-16by9::before {
+    padding-top: 42%;
+}
+
+.mail-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #333333;
+    padding: 25px 0;
+
+    .input-field {
+        width: 100%;
+    }
+
+    .fill-btn-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        a {
+            margin: 0 10px;
+        }
+
+        .btn-fill {
+            background: no-repeat;
+            color: #10b00b;
+            font-size: 20px;
+            border-bottom: 4px solid #10b00b;
+            border-radius: 0;
+            font-weight: 600;
+            box-shadow: 0px 0px 10px 5px rgba(16, 176, 11, 0.1);
+        }
+    }
+}
+.play-btn {
+	position:absolute;
+	z-index:666;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	background-color:transparent;
+	border:0;
+}
+
+.play-btn:hover {
+	cursor:pointer;
+}
+
+.play-btn:focus {
+	outline:0;
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset .form-card {
+    background: white;
+    border: 0 none;
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 auto;
+    position: relative
+}
+
+#msform fieldset {
+    padding: 50px 0;
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform fieldset .form-card {
+    text-align: left;
+    color: #9E9E9E
+}
+
+select.list-dt {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 5px 3px 5px;
+    margin: 2px
+}
+
+select.list-dt:focus {
+    border-bottom: 2px solid skyblue
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #10b00b
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 32.44%;
+    float: left;
+    position: relative
+}
+
+#progressbar #hours:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f017";
+}
+
+#progressbar #meetings:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f2b5";
+}
+
+#progressbar #clients:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f007";
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #10b00b;
+}
+
+.btn-pd {
+    padding: 5px 15px !important;
+}
+
+.performer-indicate {
+    list-style: none;
+
+      .performer-indicate-items {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .indicate-item {
+          width: 15px;
+          height: 15px;
+          margin-right: 15px;
+        }     
+        .clr-1 {
+          background: green;
+        }
+
+        .clr-2 {
+          background: gray;
+        }
+
+        .clr-3 {
+          background: red;
+        } 
+      }
+}
+
+.bx-shadow {
+  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1);
+}

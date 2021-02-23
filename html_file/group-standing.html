@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Workshop24 : Group Standing</title>
+    <meta content="Workshop24 Dashboard" name="description" />
+    <meta content="Themesdesign" name="author" />
+    <link rel="shortcut icon" href="assets/images/favIcon.png">
+    <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="assets/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/morris.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/scss/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/scss/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="topbar">
+            <div class="topbar-left">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" class="logo-lg" alt="" height="60px">
+                </a>
+            </div>
+            <div class="search-wrap" id="search-wrap">
+                <div class="search-bar">
+                    <input class="search-input" type="search" placeholder="Search" />
+                    <a href="#" class="close-search toggle-search" data-target="#search-wrap">
+                        <i class="mdi mdi-close-circle"></i>
+                    </a>
+                </div>
+            </div>
+            <nav class="navbar-custom">
+                <ul class="navbar-right list-inline float-right mb-0">
+                    <li class="dropdown notification-list list-inline-item">
+                        <div class="dropdown notification-list nav-pro-img">
+                            <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/user-1.jpg" alt="user" class="rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-wallet"></i> My Wallet</a>
+                                <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings"></i> Settings</a>
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline"></i> Lock screen</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-inline menu-left mb-0">
+                    <li class="float-left">
+                        <button class="button-menu-mobile open-left waves-effect">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="left side-menu">
+            <div class="slimscroll-menu" id="remove-scroll">
+                <div id="sidebar-menu">
+                    <ul class="metismenu" id="side-menu">
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="ti-dashboard"></i> <span> Dashboard </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-file-document-box-multiple-outline"></i><span> Daily Report <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                            <ul class="submenu">
+                                <li><a href="fill-report.html">Fill Daily Report</a></li>
+                                <li><a href="view-report.html">View Daily Report</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-calendar-text-outline"></i><span> Standings <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                            <ul class="submenu">
+                                <li><a href="group-standing.html">Group Standings</a></li>
+                                <li><a href="total-hr-work.html">Total Hours Worked</a></li>
+                                <li><a href="meetings-booked.html">Source of Meeting Booked</a></li>
+                                <li><a href="performance-benchmark.html">Performance Benchmark Chart</a></li>
+                                <li><a href="performance-graph.html">Performance Graph</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect">
+                                <i class="mdi mdi-settings"></i> <span> Settings </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect">
+                                <i class="mdi mdi-logout"></i> <span> Logout </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="content-page">
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center ">
+                            <div class="col-md-8">
+                                <div class="page-title-box">
+                                    <h4 class="page-title">Group Standings</h4>
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="index.hrml">Workshop24</a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <a href="javascript:void(0);">Standings</a>
+                                        </li>
+                                        <li class="breadcrumb-item active">Group Standings</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="float-right d-none d-md-block app-datepicker">
+                                    <input type="text" class="form-control" data-date-format="MM dd, yyyy" readonly="readonly" id="datepicker">
+                                    <i class="mdi mdi-chevron-down mdi-drop"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xl-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="extrapolate">
+                                                        <form>
+                                                            <div class="form-group row">
+                                                                <label for="example-time-input" class="col-sm-4 col-form-label">Hours Worked</label>
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control w-20" type="text" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="example-time-input" class="col-sm-4 col-form-label">Hours Worked Prospecting</label>
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control w-20" type="text" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="example-time-input" class="col-sm-4 col-form-label">Number of Meeting Booked</label>
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control w-20" type="text" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="example-time-input" class="col-sm-4 col-form-label">Number of Client Signed</label>
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control w-20" type="text" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="example-time-input" class="col-sm-4 col-form-label">Number of Firm Deals</label>
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control w-20" type="text" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="example-time-input" class="col-sm-4 col-form-label">Total Points</label>
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control w-20" type="text" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="example-time-input" class="col-sm-4 col-form-label">Total Commission</label>
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control w-20" type="text" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group text-center my-5">
+                                                                <a href="javascript:void(0);" class="btn btn-primary waves-effect waves-light fill-bttn">Extrapolate</a>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-xl-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <table id="datatable" class="table table-bordered dt-responsive nowrap display" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                        <thead>
+                                                            <tr id="filters">
+                                                                <th>Standings</th>
+                                                                <th>Commission</th>
+                                                                <th>Points</th>
+                                                            </tr>
+                                                        </thead>
+                
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Agent 1</td>
+                                                                <td>$10000</td>
+                                                                <td>223</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Agent 2</td>
+                                                                <td>$10000</td>
+                                                                <td>214</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Agent 3</td>
+                                                                <td>$10000</td>
+                                                                <td>204</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Agent 4</td>
+                                                                <td>$10000</td>
+                                                                <td>198</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Agent 5</td>
+                                                                <td>$10000</td>
+                                                                <td>182</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Agent 6</td>
+                                                                <td>$10000</td>
+                                                                <td>173</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Agent 7</td>
+                                                                <td>$10000</td>
+                                                                <td>156</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Agent 8</td>
+                                                                <td>$10000</td>
+                                                                <td>147</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Agent 9</td>
+                                                                <td>$10000</td>
+                                                                <td>138</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Agent 10</td>
+                                                                <td>$10000</td>
+                                                                <td>129</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                © 2021 Workshop24 <span class="d-none d-sm-inline-block"> - Crafted with <i class="mdi mdi-heart text-danger"></i> by AleaIT Solutions</span>.
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metismenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/dataTables.buttons.min.js"></script>
+    <script src="assets/js/buttons.bootstrap4.min.js"></script>
+    <script src="assets/js/jszip.min.js"></script>
+    <script src="assets/js/pdfmake.min.js"></script>
+    <script src="assets/js/vfs_fonts.js"></script>
+    <script src="assets/js/buttons.html5.min.js"></script>
+    <script src="assets/js/buttons.print.min.js"></script>
+    <script src="assets/js/buttons.colVis.min.js"></script>
+    <script src="assets/js/dataTables.responsive.min.js"></script>
+    <script src="assets/js/responsive.bootstrap4.min.js"></script>
+    <script src="assets/pages/datatables.init.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        // $(document).ready(function(){ 
+            
+        //     $('#datatable').DataTable({
+        //         responsive: true,
+        //         ordering: false,
+        //         initComplete: function () {
+        //             this.api().columns(2).every(function () {
+        //                 var column = this;
+
+        //                 var select = $('<select><option value="">Points</option></select>')
+        //                     .appendTo($("#filters").find("th").eq(column.index()))
+        //                     .on('change', function () {
+        //                     var val = $.fn.dataTable.util.escapeRegex(
+        //                     $(this).val());
+
+        //                     column.search(val ? '^' + val + '$' : '', true, false)
+        //                         .draw();
+        //                 });
+        //                 column.data().unique().sort().each(function (d, j) {
+        //                     $(select).append('<option value="' + d + '">' + d + '</option>')
+        //                 });
+        //             });
+        //         }
+        //     });
+        // });
+    </script>
+</body>
+
+</html>

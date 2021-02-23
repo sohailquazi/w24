@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Workshop24 : Daily Report</title>
+    <meta content="Workshop24 Dashboard" name="description" />
+    <meta content="Themesdesign" name="author" />
+    <link rel="shortcut icon" href="assets/images/favIcon.png">
+
+    <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/morris.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/scss/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/scss/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="topbar">
+            <div class="topbar-left">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" class="logo-lg" alt="" height="60px">
+                </a>
+            </div>
+            <div class="search-wrap" id="search-wrap">
+                <div class="search-bar">
+                    <input class="search-input" type="search" placeholder="Search" />
+                    <a href="#" class="close-search toggle-search" data-target="#search-wrap">
+                        <i class="mdi mdi-close-circle"></i>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="navbar-custom">
+                <ul class="navbar-right list-inline float-right mb-0">
+                    <li class="dropdown notification-list list-inline-item">
+                        <div class="dropdown notification-list nav-pro-img">
+                            <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/user-1.jpg" alt="user" class="rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-wallet"></i> My Wallet</a>
+                                <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings"></i> Settings</a>
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline"></i> Lock screen</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <ul class="list-inline menu-left mb-0">
+                    <li class="float-left">
+                        <button class="button-menu-mobile open-left waves-effect">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+        <div class="left side-menu">
+            <div class="slimscroll-menu" id="remove-scroll">
+                <div id="sidebar-menu">
+                    <ul class="metismenu" id="side-menu">
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="ti-dashboard"></i> <span> Dashboard </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-file-document-box-multiple-outline"></i><span> Daily Report <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                            <ul class="submenu">
+                                <li><a href="fill-report.html" class="mm-active">Fill Daily Report</a></li>
+                                <li><a href="view-report.html">View Daily Report</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-calendar-text-outline"></i><span> Standings <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                            <ul class="submenu">
+                                <li><a href="group-standing.html">Group Standings</a></li>
+                                <li><a href="pages-invoice.html">Total Hours Worked</a></li>
+                                <li><a href="meetings-booked.html">Source of Meeting Booked</a></li>
+                                <li><a href="performance-benchmark.html">Performance Benchmark Chart</a></li>
+                                <li><a href="pages-maintenance.html">Performance Graph</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect">
+                                <i class="mdi mdi-settings"></i> <span> Settings </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0);" class="waves-effect">
+                                <i class="mdi mdi-logout"></i> <span> Logout </span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+
+        </div>
+        <div class="content-page">
+            <div class="content">
+                <div class="container-fluid p-0">
+                    <div class="page-title-box">
+                        <div class="row align-items-center ">
+                            <div class="col-md-8">
+                                <div class="page-title-box">
+                                    <h4 class="page-title">Fill Daily Report</h4>
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="index.hrml">Workshop24</a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <a href="javascript:void(0);">Daily Report</a>
+                                        </li>
+                                        <li class="breadcrumb-item active">Fill Daily Report</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <form id="msform">
+                                        <!-- progressbar -->
+                                        <ul id="progressbar">
+                                            <li class="pr-link active" id="hours"><strong>Working Hours</strong></li>
+                                            <li class="pr-link"  id="meetings"><strong>Meetings</strong></li>
+                                            <li class="pr-link" id="clients"><strong>Client / Deals</strong></li>
+                                        </ul> <!-- fieldsets -->
+                                        <fieldset>
+                                            <div class="form-card row">
+                                                <div class="col-sm-2">
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Number of hours worked</label>
+                                                        <input class="form-control w-20" type="text" placeholder="Hours">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Number of hours prospecting with prospects less than 30 days since first contact</label>
+                                                        <input class="form-control w-20" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Number of hours prospecting greater then 30days after first contact</label>
+                                                        <input class="form-control w-20" type="text">
+                                                    </div>
+                                                </div>
+                                            </div><input type="button" name="next" class="btn btn-primary next action-button my-5" value="Next" />
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="form-card row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Total Meeting Booked</label>
+                                                        <input class="form-control w-20" type="text" value="02">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Meeting Booked Within 72 Hours</label>
+                                                        <input class="form-control w-20" type="text" value="02">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Meeting Attend Today</label>
+                                                        <input class="form-control w-20" type="text" value="01">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Meeting Rescheduled Today</label>
+                                                        <div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups" data-parsley-mincheck="2">
+                                                                <label class="custom-control-label" for="customCheck1">Yes</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck2" data-parsley-multiple="groups" data-parsley-mincheck="2">
+                                                                <label class="custom-control-label" for="customCheck2">No</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Meeting Cancelled Today</label>
+                                                        <input class="form-control w-20" type="text" value="01">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Specify The Source of Meeting</label>
+                                                        <select class="form-control">
+                                                            <option>Select</option>
+                                                            <option>Source 1</option>
+                                                            <option>Source 2</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Specify The Source of Meeting</label>
+                                                        <select class="form-control">
+                                                            <option>Select</option>
+                                                            <option>Source 1</option>
+                                                            <option>Source 2</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Specify The Source of Meeting</label>
+                                                        <select class="form-control">
+                                                            <option>Select</option>
+                                                            <option>Source 1</option>
+                                                            <option>Source 2</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Number of Meeting Scheduled</label>
+                                                        <input class="form-control w-20" type="text" value="01">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Rescheduled Date</label>
+                                                        <input class="form-control" type="date" value="2021-02-11" id="example-date-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="button" name="previous" class="btn btn-secondary previous action-button-previous my-5" value="Previous" />
+                                            <input type="button" name="next" class="btn btn-primary next action-button my-5" value="Next Step">
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="form-card row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Number of Client Signed</label>
+                                                        <input class="form-control w-20" type="text" value="02">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Buyer Agreement Signed</label>
+                                                        <input class="form-control w-20" type="text" value="02">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Listing Agreement Signed</label>
+                                                        <input class="form-control w-20" type="text" value="01">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Number of Deals Firm</label>
+                                                        <input class="form-control w-20" type="text" value="01">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Gross Commission Earned</label>
+                                                        <input class="form-control w-20" type="text" value="01">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Specify The Source of Meeting</label>
+                                                        <select class="form-control">
+                                                            <option>Select</option>
+                                                            <option>Source 1</option>
+                                                            <option>Source 2</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Specify The Source of Meeting</label>
+                                                        <select class="form-control">
+                                                            <option>Select</option>
+                                                            <option>Source 1</option>
+                                                            <option>Source 2</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="example-time-input" class="col-form-label">Specify The Source of Meeting</label>
+                                                        <select class="form-control">
+                                                            <option>Select</option>
+                                                            <option>Source 1</option>
+                                                            <option>Source 2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="button" name="previous" class="btn btn-secondary previous action-button-previous my-5" value="Previous" />
+                                            <input type="button" name="next" class="btn btn-primary next action-button my-5" value="Next Step">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                © 2021 Workshop24 <span class="d-none d-sm-inline-block"> - Crafted with <i class="mdi mdi-heart text-danger"></i> by AleaIT Solutions</span>.
+            </footer>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metismenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            var current_fs, next_fs, previous_fs; //fieldsets
+            var opacity;
+
+            $(".next").click(function(){
+
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
+
+                //Add Class Active
+                $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+                //show the next fieldset
+                next_fs.show();
+                //hide the current fieldset with style
+                current_fs.animate({opacity: 0}, {
+                    step: function(now) {
+                    // for making fielset appear animation
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        next_fs.css({'opacity': opacity});
+                    },
+                    duration: 600
+                });
+            });
+
+            $(".previous").click(function(){
+
+                current_fs = $(this).parent();
+                previous_fs = $(this).parent().prev();
+
+                //Remove class active
+                $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+                //show the previous fieldset
+                previous_fs.show();
+
+                //hide the current fieldset with style
+                current_fs.animate({opacity: 0}, {
+                    step: function(now) {
+                        // for making fielset appear animation
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        previous_fs.css({'opacity': opacity});
+                    },
+                    duration: 600
+                });
+            });
+
+            $(".submit").click(function(){
+                return false;
+            })
+
+        });
+    </script>
+</body>
+
+</html>

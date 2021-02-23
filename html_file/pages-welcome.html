@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Workshop24 : Welcome</title>
+    <meta content="Workshop24 Dashboard" name="description" />
+    <meta content="Themesdesign" name="author" />
+    <link rel="shortcut icon" href="assets/images/favIcon.png">
+
+    <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/morris.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/scss/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/scss/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="topbar bg-white">
+            <div class="topbar-left">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" class="logo-lg" alt="" height="60px">
+                </a>
+            </div>
+
+        </div>
+        <div class="content-page ml-0">
+            <div class="content mb-0 pb-0">
+
+                <div class="container-fluid p-0">
+                    <div class="page-title-box p-0">
+
+                        <div class="row align-items-center ">
+                            <div class="col-md-12 p-0">
+                                <div class="video-wrapper">
+                                    <!-- <div class="video-wrap">
+                                        <img class="img-fluid" src="assets/images/video-wrap.png" alt="" />
+                                    </div> -->
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" id="player" src="http://player.vimeo.com/video/220210162?color=67a8e4&amp;title=0&amp;byline=0&amp;portrait=0" playisline></iframe>
+                                        <button id="play" class="play-btn">
+                                            <svg enable-background="new 0 0 141.73 141.73" height="141.73px" id="Warstwa_1" version="1.1" viewBox="0 0 141.73 141.73" width="141.73px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M101.628,40.092c-8.22-8.22-19.149-12.746-30.774-12.746c-11.624,0-22.553,4.526-30.772,12.746   c-16.968,16.969-16.967,44.578,0.001,61.546c8.22,8.22,19.149,12.747,30.773,12.747s22.553-4.526,30.772-12.746   s12.747-19.148,12.747-30.773S109.848,48.312,101.628,40.092z M100.214,100.225c-7.842,7.842-18.269,12.16-29.358,12.16   s-21.517-4.319-29.359-12.161c-16.188-16.188-16.188-42.529-0.001-58.718c7.842-7.842,18.269-12.16,29.358-12.16   c11.091,0,21.518,4.318,29.36,12.16c7.842,7.843,12.161,18.269,12.161,29.359S108.056,92.382,100.214,100.225z" fill="#ffffff"/><path d="M65.893,55.983c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l13.466,13.466L64.478,84.331   c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293L80.065,71.57   c0.391-0.391,0.391-1.023,0-1.414L65.893,55.983z" fill="#ffffff"/></g></svg>
+                                        </button>   
+                                    </div>
+                                </div>
+                                <div class="mail-wrapper">
+                                    <div class="container-fluid">
+                                        <div class="mail-wrap">
+                                            <div class="card mb-0">
+                                                <div class="card-body row">
+                                                    <div class="col-md-7">
+                                                        <div class="form-group mb-0">
+                                                            <div class="input-field">
+                                                                <input type="text" name="email" id="email" placeholder="" value="johndoe@aleait.in" class="form-control"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <div class="form-group mb-0">
+                                                            <div class="fill-btn-wrap">
+                                                                <a href="fill-report.html" class="btn btn-primary waves-effect waves-light fill-bttn btn-fill"> <span>Fill up your daily report</span> <i class="fas fa-arrow-right"></i></a>
+                                                                <a href="index.html" class="btn btn-outline-dark waves-effect waves-light fill-bttn"> <span>Skip</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+    $('#play').on('click', function(e) {
+	e.preventDefault();
+	$("#player")[0].src += "?autoplay=1";
+	$('#player').show();
+	$('#video-cover').hide();
+	$('#play').hide();
+})
+    // $(document).ready(function(){
+    //     $('.page-title-box').css('height', $(window).height());
+    // });
+    // $(window).resize(function(){
+    //     $('.page-title-box').css('height', $(window).height());
+    // });
+</script>
+</html>
